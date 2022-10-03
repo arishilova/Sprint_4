@@ -11,17 +11,17 @@ public class PersonalDataPage {
     private WebDriver driver;
 
     // Поле ввода имени
-    private final By firstNameInput = By.cssSelector(".Order_Form__17u6u div:first-child .Input_Input__1iN_Z");
+    private final By firstNameInput = By.xpath(".//input[@placeholder='* Имя']");
     // Поле ввода фамилии
-    private final By lastNameInput = By.cssSelector(".Order_Form__17u6u div:nth-child(2) .Input_Input__1iN_Z");
+    private final By lastNameInput = By.xpath(".//input[@placeholder='* Фамилия']");
     // Поле ввода адреса
-    private final By addressInput = By.cssSelector(".Order_Form__17u6u div:nth-child(3) .Input_Input__1iN_Z");
+    private final By addressInput = By.xpath(".//input[@placeholder='* Адрес: куда привезти заказ']");
     // Выпадающий список со станциями метро
-    private final By metroStationDropDownList = By.cssSelector(".select-search__input");
+    private final By metroStationDropDownList = By.xpath(".//input[@placeholder='* Станция метро']");
     // Поле ввода телефона
-    private final By phoneInput = By.cssSelector(".Order_Form__17u6u div:nth-child(5) .Input_Input__1iN_Z");
+    private final By phoneInput = By.xpath(".//input[@placeholder='* Телефон: на него позвонит курьер']");
     // Кнопка "Далее"
-    private final By nextButton = By.cssSelector(".Button_Button__ra12g.Button_Middle__1CSJM");
+    private final By nextButton = By.xpath(".//button[text()='Далее']");
     // Заголовок "Для кого самокат"
     private final By personalDataPageHeader = By.xpath(".//div[text()='Для кого самокат']");
     // Сообщение об ошибке в поле ввода "Имя"

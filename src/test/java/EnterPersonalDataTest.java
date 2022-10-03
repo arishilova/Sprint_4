@@ -67,6 +67,7 @@ public class EnterPersonalDataTest {
         objPersonalDataPage.clickNextButton();
         objRentDataPage.fillInRentForm(commentary);
         objRentDataPage.clickRentDataPageOrderButton();
+        objRentDataPage.clickYesButton();
         objRentDataPage.confirmOrder();
     }
 

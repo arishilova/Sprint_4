@@ -24,48 +24,56 @@ public class CheckFAQTest {
     @Test
     public void checkFirstQuestionTest() {
         HomePage objHomePage = new HomePage(driver);
+        objHomePage.clickQuestionOne();
         objHomePage.checkAnswerOneText();
     }
 
     @Test
     public void checkSecondQuestionTest() {
         HomePage objHomePage = new HomePage(driver);
+        objHomePage.clickQuestionTwo();
         objHomePage.checkAnswerTwoText();
     }
 
     @Test
     public void checkThirdQuestionTest() {
         HomePage objHomePage = new HomePage(driver);
+        objHomePage.clickQuestionThree();
         objHomePage.checkAnswerThreeText();
     }
 
     @Test
     public void checkForthQuestionTest() {
         HomePage objHomePage = new HomePage(driver);
+        objHomePage.clickQuestionFour();
         objHomePage.checkAnswerFourText();
     }
 
     @Test
     public void checkFifthQuestionTest() {
         HomePage objHomePage = new HomePage(driver);
+        objHomePage.clickQuestionFive();
         objHomePage.checkAnswerFiveText();
     }
 
     @Test
     public void checkSixthQuestionTest() {
         HomePage objHomePage = new HomePage(driver);
+        objHomePage.clickQuestionSix();
         objHomePage.checkAnswerSixText();
     }
 
     @Test
     public void checkSeventhQuestionTest() {
         HomePage objHomePage = new HomePage(driver);
+        objHomePage.clickQuestionSeven();
         objHomePage.checkAnswerSevenText();
     }
 
     @Test
     public void checkEighthQuestionTest() {
         HomePage objHomePage = new HomePage(driver);
+        objHomePage.clickQuestionEight();
         objHomePage.checkAnswerEightText();
     }
 

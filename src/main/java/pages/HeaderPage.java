@@ -12,7 +12,7 @@ public class HeaderPage {
     // Логотип "Самокат"
     private By scooterLogo = By.xpath(".//img[@alt='Scooter']");
     // Кнопка "Статус заказа"
-    private By orderStatusButton = By.cssSelector("button.Header_Link__1TAG7");
+    private By orderStatusButton = By.xpath(".//button[text()='Статус заказа']");
     // Поле ввода "Введите номер заказа"
     private By orderNumberInput = By.xpath(".//input[@placeholder='Введите номер заказа']");
     // Кнопка "Go!"
@@ -26,17 +26,19 @@ public class HeaderPage {
     public void clickHeaderOrderButton() {
         driver.findElement(headerOrderButton).click();
     }
-    // клик по логотипу "Самокат"
+    // Клик по логотипу "Самокат"
     public void clickScooterLogo() {
         driver.findElement(scooterLogo).click();
     }
-    // Поиск по номеру заказа
+    // Клик по кнопке "Статус заказа"
     public void clickOrderStatusButton() {
         driver.findElement(orderStatusButton).click();
     }
+    // Ввод номера заказа в инпут
     public void fillInOrderNumberInput(String orderNumber) {
         driver.findElement(orderNumberInput).sendKeys(orderNumber);
     }
+    // Клик по кнопке "Go!"
     public void clickGoButton() {
         driver.findElement(goButton).click();
     }
